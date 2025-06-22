@@ -1,1 +1,1 @@
-Reusbale components for future web-development
+Re-usable components for future web-development
