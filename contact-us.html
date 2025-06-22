@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="contact-us.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <main>
+      <h1>Contact Us</h1>
+      <form action="/" method="GET">
+        <section>
+          <h2>How can we help you?</h2>
+          <ul>
+            <li>
+              <label for="username">Your Name</label>
+              <input type="text" name="user-name" id="username" required />
+            </li>
+            <li>
+              <label for="useremail">Your E-Mail Address</label>
+              <input type="email" name="user-email" id="useremail" required />
+            </li>
+            <li>
+              <label for="userphone">Your Phone Number</label>
+              <input type="number" name="user-phone" id="userphone" required />
+            </li>
+
+            <li>
+              <label for="text-area">Your Message</label>
+              <textarea name="User-message" id="text-area" rows="6"> </textarea>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <label for="select">How did you find us?</label>
+          <select name="selection" id="select">
+            <option value="search">Web Search</option>
+            <option value="word-of-mouth">Word of Mouth</option>
+            <option value="other">Other</option>
+          </select>
+        </section>
+        <section>
+          <h2>How should we reply?</h2>
+          <ul>
+            <li class="selection">
+              <input
+                type="radio"
+                name="reply"
+                id="reply-phone"
+                value="phone"
+                required
+              />
+              <label for="reply-phone">Call me</label>
+            </li>
+            <li class="selection">
+              <input
+                type="radio"
+                name="reply"
+                id="reply-email"
+                value="email"
+                required
+              />
+              <label for="reply-email">Send me an email</label>
+            </li>
+            <li class="selection">
+              <input
+                type="radio"
+                name="reply-none"
+                id="reply-none"
+                value="reply-none"
+                required
+              />
+              <label for="reply-none">Don't reply</label>
+            </li>
+          </ul>
+        </section>
+
+        <section class="selection">
+          <input type="checkbox" name="" id="accept-term" required />
+          <label for="accept-term">Accept Terms</label>
+        </section>
+
+        <section id="form-action">
+          <button id="clear" type="button">Clear</button>
+          <button id="submit" type="submit">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

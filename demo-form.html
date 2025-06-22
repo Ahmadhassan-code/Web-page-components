@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="demo-form.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Demo Form</h1>
+    </header>
+    <main>
+      <form action="/" method="GET">
+        <section>
+          <h2>Your personal details</h2>
+          <ul>
+            <li>
+              <label for="username">Your Name</label>
+              <input
+                type="text"
+                name="user-name"
+                id="username"
+                required
+                maxlength="25"
+                placeholder="First & Last Name"
+              />
+            </li>
+            <li>
+              <label for="useremail">Your email address</label>
+              <input
+                type="email"
+                name="user-email"
+                id="useremail"
+                required
+                maxlength="35"
+                placeholder="Your email"
+              />
+            </li>
+            <li>
+              <label for="userpassword"> Enter your Password</label>
+              <input
+                type="password"
+                name="user-password"
+                id="userpassword"
+                required
+                minlength="8"
+                placeholder="Minimum 8 character"
+              />
+            </li>
+          </ul>
+
+          <h2>More details</h2>
+
+          <ul>
+            <li>
+              <label for="userage">Enter your age</label>
+              <input
+                type="number"
+                step="1"
+                name="user-age"
+                id="userage"
+                required
+                min="18"
+                placeholder="18+"
+              />
+            </li>
+            <li>
+              <label for="birthdate">Enter your Birthday</label>
+              <input
+                type="date"
+                name="birth-date"
+                id="birthdate"
+                required
+                min="1925-01-01"
+                max="2007-06-22"
+              />
+            </li>
+          </ul>
+
+          <label for="favorite-color"> Your favorite color?</label>
+          <select id="favorite-color" name="favorite-color">
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Green">Green</option>
+          </select>
+        </section>
+        <hr />
+
+        <textarea placeholder="Enter your message here!" rows="7"></textarea>
+
+        <section>
+          <h2>How should we verifiy your account?</h2>
+          <ul>
+            <li></li>
+            <li class="verification">
+              <input
+                type="radio"
+                name="verify"
+                id="verify-text"
+                value="text"
+                required
+              />
+              <label for="verify-text"> Via text message (SMS)</label>
+            </li>
+            <li class="verification">
+              <input
+                type="radio"
+                name="verify"
+                id="verify-phone"
+                value="number"
+                required
+              />
+              <label for="verify-phone"> Via a phone call</label>
+            </li>
+            <li class="verification">
+              <input
+                type="radio"
+                name="verify"
+                id="verify-email"
+                value="email"
+                required
+              />
+              <label for="verify-text"> Via an email</label>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>How should we contact you?</h2>
+          <ul>
+            <li class="verification">
+              <input
+                type="checkbox"
+                name="contact"
+                id="contact-email"
+                value="email"
+                required
+              />
+              <label for="contact-email"> Contact me via email</label>
+            </li>
+            <li class="verification">
+              <input
+                type="checkbox"
+                name="contact"
+                id="contact-phone"
+                value="email"
+                required
+              />
+              <label for="contact-phone"> Contact me via phone</label>
+            </li>
+          </ul>
+        </section>
+        <hr />
+
+        <section>
+          <div class="verification">
+            <input type="checkbox" name="agree" id="terms" required />
+            <label for="terms"> Agree to Terms and conditions</label>
+          </div>
+        </section>
+
+        <section>
+          <button>Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

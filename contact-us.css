@@ -1,0 +1,97 @@
+body {
+    font-family: sans-serif;
+    background-color: azure;
+}
+
+h1 {
+    text-align: center;
+    padding: 2rem;
+
+}
+
+form {
+    width: 40rem;
+    margin: auto;
+    padding: 1rem;
+    background-color: rgb(245, 245, 255);
+    box-shadow:  0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+
+section {
+    margin-bottom: 1rem;
+    
+}
+
+label {
+    color: rgb(36, 45, 64);
+    display: block;
+    margin: 0.5rem 0;
+
+}
+
+
+ul {
+    list-style: none;
+    padding-left: 0rem;
+}
+
+input, 
+select, 
+textarea {
+font-family: inherit;
+padding: 0.5rem;
+border: 1px solid rgb(53, 60, 86);
+width: 100%;
+box-sizing: border-box;
+border-radius: 6px;
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus, 
+textarea:focus {
+    background-color: rgb(219, 219, 255);
+}
+
+
+.selection {
+    display: flex;
+}
+
+.selection input {
+    width: auto;
+}
+
+button {
+    font-family: inherit;
+    border: px solid rgb(51, 67, 100);
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submit {
+    background-color: rgb(71, 71, 156);
+    color: white;
+}
+
+#clear {
+    background-color: rgb(213, 213, 255);
+    color: rgb(38, 38, 91);
+}
+
+#submit:hover {
+    background-color: rgb(85, 85, 185);
+}
+
+#clear:hover {
+    background-color: rgb(213, 213, 255);
+    color: rgb(188, 188, 255);
+}
+
+#form-action {
+    text-align: right;
+}
